@@ -1,0 +1,124 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Glowing light effect -->
+    <radialGradient id="glowGradient" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#ffff00;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#ffaa00;stop-opacity:0.8" />
+      <stop offset="60%" style="stop-color:#ff4400;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#ff0000;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Glow animation -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Rainbow gradient for title -->
+    <linearGradient id="rainbow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff0000"/>
+      <stop offset="16.67%" style="stop-color:#ff7700"/>
+      <stop offset="33.33%" style="stop-color:#ffff00"/>
+      <stop offset="50%" style="stop-color:#00ff00"/>
+      <stop offset="66.67%" style="stop-color:#0099ff"/>
+      <stop offset="83.33%" style="stop-color:#6633ff"/>
+      <stop offset="100%" style="stop-color:#ff00ff"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Dark mystical background -->
+  <rect width="800" height="800" fill="#0a0a1a"/>
+  
+  <!-- Matrix-like falling numbers background -->
+  <text x="50" y="100" font-family="monospace" font-size="14" fill="#00ff0033" opacity="0.3">1010110101</text>
+  <text x="150" y="150" font-family="monospace" font-size="14" fill="#00ff0033" opacity="0.3">0110011010</text>
+  <text x="250" y="120" font-family="monospace" font-size="14" fill="#00ff0033" opacity="0.3">1100110101</text>
+  <text x="350" y="180" font-family="monospace" font-size="14" fill="#00ff0033" opacity="0.3">0101011010</text>
+  <text x="450" y="140" font-family="monospace" font-size="14" fill="#00ff0033" opacity="0.3">1011010110</text>
+  <text x="550" y="160" font-family="monospace" font-size="14" fill="#00ff0033" opacity="0.3">0110101101</text>
+  <text x="650" y="130" font-family="monospace" font-size="14" fill="#00ff0033" opacity="0.3">1101010110</text>
+  <text x="700" y="170" font-family="monospace" font-size="14" fill="#00ff0033" opacity="0.3">0101101011</text>
+  
+  <!-- Title "DATA SENTINEL" -->
+  <text x="400" y="80" font-family="monospace, 'Courier New'" font-size="56" font-weight="bold" fill="url(#rainbow)" text-anchor="middle" filter="url(#glow)">DATA SENTINEL</text>
+  
+  <!-- Matrix numbers behind title -->
+  <text x="400" y="115" font-family="monospace" font-size="12" fill="#00ff0044" text-anchor="middle" opacity="0.5">01001101010110100101101010110101001011010101</text>
+  
+  <!-- Glowing light above head -->
+  <ellipse cx="400" cy="280" rx="80" ry="60" fill="url(#glowGradient)" filter="url(#glow)">
+    <animate attributeName="ry" values="60;70;60" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <circle cx="400" cy="280" r="35" fill="#ffff00" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="r" values="35;42;35" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="400" cy="280" r="20" fill="#ffaa00" opacity="0.8" filter="url(#glow)"/>
+  
+  <!-- Pythia figure (mystical oracle) -->
+  <!-- Head -->
+  <circle cx="400" cy="350" r="45" fill="#d4a574" stroke="#8b6f47" stroke-width="2"/>
+  
+  <!-- Hood/veil -->
+  <path d="M 355 320 Q 400 300 445 320 L 445 360 Q 400 340 355 360 Z" fill="#2a1a5e" opacity="0.8"/>
+  <path d="M 350 340 Q 400 320 450 340 L 450 370 L 350 370 Z" fill="#3a2a6e" opacity="0.9"/>
+  
+  <!-- Eyes (mystical, glowing) -->
+  <ellipse cx="380" cy="350" rx="8" ry="10" fill="#00ffff" filter="url(#glow)"/>
+  <ellipse cx="420" cy="350" rx="8" ry="10" fill="#00ffff" filter="url(#glow)"/>
+  
+  <!-- Nose -->
+  <line x1="400" y1="350" x2="400" y2="365" stroke="#8b6f47" stroke-width="2"/>
+  
+  <!-- Mystical third eye -->
+  <circle cx="400" cy="330" r="6" fill="#9966ff" opacity="0.8" filter="url(#glow)"/>
+  
+  <!-- Body/robe -->
+  <path d="M 400 395 L 350 450 L 350 650 L 450 650 L 450 450 Z" fill="#1a0a3e" stroke="#3a2a6e" stroke-width="2"/>
+  
+  <!-- Arms -->
+  <path d="M 350 450 L 280 500 L 290 520 L 350 480" fill="#2a1a5e" stroke="#3a2a6e" stroke-width="2"/>
+  <path d="M 450 450 L 520 500 L 510 520 L 450 480" fill="#2a1a5e" stroke="#3a2a6e" stroke-width="2"/>
+  
+  <!-- Hands gesturing over crystal ball -->
+  <ellipse cx="280" cy="520" rx="20" ry="25" fill="#d4a574" stroke="#8b6f47" stroke-width="2"/>
+  <ellipse cx="520" cy="520" rx="20" ry="25" fill="#d4a574" stroke="#8b6f47" stroke-width="2"/>
+  
+  <!-- Crystal ball with figures -->
+  <circle cx="400" cy="550" r="80" fill="#1a3a5a" opacity="0.3" stroke="#66ccff" stroke-width="3" filter="url(#glow)"/>
+  <circle cx="400" cy="550" r="70" fill="radial-gradient(circle, #ffffff11, #0066cc22)" opacity="0.5"/>
+  
+  <!-- Forecasted figures inside crystal ball -->
+  <text x="400" y="530" font-family="monospace, 'Courier New'" font-size="24" font-weight="bold" fill="#00ffff" text-anchor="middle" filter="url(#glow)">169.36</text>
+  <text x="400" y="560" font-family="monospace, 'Courier New'" font-size="20" font-weight="bold" fill="#66ffcc" text-anchor="middle" filter="url(#glow)">12.34</text>
+  <text x="400" y="585" font-family="monospace, 'Courier New'" font-size="18" font-weight="bold" fill="#99ffdd" text-anchor="middle" filter="url(#glow)">6.54</text>
+  
+  <!-- Mystical particles around crystal ball -->
+  <circle cx="320" cy="520" r="3" fill="#ffff00" opacity="0.8">
+    <animate attributeName="cy" values="520;500;520" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="480" cy="530" r="3" fill="#ff00ff" opacity="0.8">
+    <animate attributeName="cy" values="530;510;530" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="580" r="3" fill="#00ffff" opacity="0.8">
+    <animate attributeName="cy" values="580;560;580" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="590" r="3" fill="#ffaa00" opacity="0.8">
+    <animate attributeName="cy" values="590;570;590" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Table/altar -->
+  <rect x="300" y="640" width="200" height="15" fill="#4a3a2a" stroke="#2a1a0a" stroke-width="2"/>
+  <rect x="280" y="655" width="240" height="8" fill="#3a2a1a"/>
+  
+  <!-- Additional matrix numbers floating -->
+  <text x="200" y="700" font-family="monospace" font-size="12" fill="#00ff0055" opacity="0.4">11001011</text>
+  <text x="550" y="720" font-family="monospace" font-size="12" fill="#00ff0055" opacity="0.4">01010110</text>
+  <text x="100" y="400" font-family="monospace" font-size="12" fill="#00ff0055" opacity="0.4">10110101</text>
+  <text x="650" y="450" font-family="monospace" font-size="12" fill="#00ff0055" opacity="0.4">01101010</text>
+</svg>
